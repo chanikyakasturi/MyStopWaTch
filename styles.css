@@ -1,0 +1,110 @@
+/* <!-- Code is written by CHANIKYA  --> */
+body::-webkit-scrollbar {
+  overflow: hidden;
+  display: none;
+}
+body{
+    margin: 0px;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(aqua,blue);
+}
+.text{
+    font-size: 3rem;
+    letter-spacing: 10px;
+    margin-top: 30px;
+    color: darkslategray;
+    font-family: 'Times New Roman', Times, serif;   
+}
+.Clock_Container{
+    height: 40vh;
+    width: 40vw;
+    min-height: 270px;
+    min-width: 480px;
+    border: 4px solid aquamarine;
+    border-radius: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px; 
+}
+.Timer{
+    height: 12vh;
+    width: 25vw;
+    border: 2px solid white;
+    background-color:whitesmoke;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.Timer_text{
+    color: chocolate;
+    font-size: 2rem;
+    margin-top: 20px;
+    letter-spacing: 5px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+.buttons{
+    display: flex;
+    height: 20%;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.start{
+  color: blue;
+ font-size: 1.5rem;
+ font-weight: bold;
+ letter-spacing: 3px;
+ width: 30%;
+ padding:10px;
+ border: 1px solid aqua;
+ border-radius: 30px;
+ cursor: pointer;
+ 
+
+}
+.start:hover{
+    background-color: blue;
+    color: aqua;
+    
+}
+.stop{
+    color:red;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    width: 30%;
+    padding:10px;
+    border: 1px solid aqua;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.stop:hover{
+    background-color: red;
+    color: aqua;
+}
+.reset{
+    color: green;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    width: 30%;
+    padding:10px;
+    border: 1px solid aqua;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.reset:hover{
+background-color: green;
+color: aqua;
+}
+
