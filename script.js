@@ -1,22 +1,28 @@
 //<!-- Code is written by CHANIKYA  -->
+//fetching the buttons by their id's
 let StartBtn=document.getElementById("start");
 let StopBtn=document.getElementById('stop');
-
 let ResetBtn=document.getElementById('reset');
 let timerText=document.getElementById('Timer_text');
 
+//addding event listener for each button respectively
 StartBtn.addEventListener('click',start);
 StopBtn.addEventListener('click',stop);
 ResetBtn.addEventListener('click',reset);
+
+//initializing varibles
 let milliseconds=0;
 let seconds=0;
 let minutes=0;
 let hours=0;
-let eventValue;
-let ms,s,m,h;
 let check=false;
 let IsStart=false;
+let eventValue;
 
+//declaring varibles for concatinating
+let ms,s,m,h;
+
+//creating start function
 function start(){
     if(IsStart===true){
         return
@@ -76,13 +82,16 @@ function start(){
     },5)
 }
 
+//creating stop function
 function stop() {
     if(check === false) return;
+    //to clear the interval
     clearInterval(eventValue);
-    StartBtn.innerText = "RESUME";
+    StartBtn.innerText = "Resume";
     IsStart= false;
 }
 
+//creating reset function
 function reset() {
     check = false;
     IsStart = false;
@@ -91,6 +100,7 @@ function reset() {
     minutes = 0;
     hours = 0;
     timerText.innerHTML = "00 : 00 : 00 : 000";
+    //to clear the interval
     clearInterval(eventValue);
-    StartBtn.innerText = "START";   
+    StartBtn.innerText = "Start";   
 }
